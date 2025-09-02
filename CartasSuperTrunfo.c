@@ -44,6 +44,16 @@ int main() {
     printf("Insira quantos pontos turisticos essa cidade possui:\n");
     scanf("%d", &pontos_turisticos1);
 
+    //Densidade Populacional da Carta 1 
+    //dividir a população pela área
+
+    densidade_populacional1 = populacao1/area1;
+
+    //PIB Per Capita da Carta 1
+    //Dividir o PIB pela população
+
+    pib_percapita1 = pib1 / populacao1;
+
 
     //inserindo informações sobre a segunda carta
 
@@ -70,6 +80,16 @@ int main() {
     printf("Insira quantos pontos turisticos essa cidade possui:\n");
     scanf("%d", &pontos_turisticos2);
 
+    //Densidade Populacional da Carta 2
+    //dividir a população pela área
+
+    densidade_populacional2 = populacao2/area2;
+
+    //PIB Per Capita da Carta 2
+    //Dividir o PIB pela população
+
+    pib_percapita2 = pib2/populacao2;
+
 
     //Resultado do jogo - mostrando informações das cartas
 
@@ -81,6 +101,8 @@ int main() {
     printf("Área: %f \n", area1);
     printf("PIB: %f \n", pib1);
     printf("Pontos Turisticos: %d \n", pontos_turisticos1);
+    printf("Densidade Populacional: %f \n", densidade_populacional1);
+    printf("PIB Per Capita: %f \n", pib_percapita1);
 
     printf("\n");
 
@@ -92,7 +114,10 @@ int main() {
     printf("Área: %f \n", area2);
     printf("PIB: %f \n", pib2);
     printf("Pontos Turisticos: %d \n", pontos_turisticos2);
+    printf("Densidade Populacional: %.3f \n", densidade_populacional2);
+    printf("PIB Per Capita: %.3f \n", pib_percapita2);
 
-    //Desafio novato
+    //Desafio novato - OK 29/08/2025
+    //Desafio aventureiro - OK 01/09/2025
     return 0;
 }
