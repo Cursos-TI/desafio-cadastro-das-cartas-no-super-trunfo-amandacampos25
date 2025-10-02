@@ -130,6 +130,8 @@ int main() {
     printf("Densidade Populacional: %.3f \n", densidade_populacional2);
     printf("PIB Per Capita: %.3f \n", pib_percapita2);
 
+    printf("\n");
+
     //Comparando as cartas
 
     printf("COMPARANDO AS CARTAS\n");
@@ -142,6 +144,72 @@ int main() {
     printf("PIB per Capita: Carta 1 venceu (%d) \n", pib_percapita1 > pib_percapita2);
     printf("Super Poder: Carta 1 venceu (%d) \n", superPoder1 > superPoder2);
 
+    //Implementando a lógica com if-else
+
+    printf("\n");
+
+    printf("DUELO DAS CARTAS \n");
+
+    printf("População: \n");
+    if(populacao1 > populacao2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+
+    printf("Área: \n");
+    if(area1 > area2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+    
+    printf("PIB: \n");
+    if(pib1 > pib2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+
+    printf("Pontos Turisticos: \n");
+    if(pontos_turisticos1>pontos_turisticos2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+
+    printf("Densidade Populacional: \n");
+    if(densidade_populacional1<densidade_populacional2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+
+    printf("PIB Per Capita: \n");
+    if(pib_percapita1>pib_percapita2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+
+    printf("\n");
+     
+    printf("Super Poder: \n");
+    if(superPoder1>superPoder2){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
 
     return 0;
 }
